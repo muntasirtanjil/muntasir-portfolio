@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+.suse {
+    font-family: "SUSE", sans-serif;
+}
+
+.rancho {
+  font-family: "Rancho", cursive;
+  
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
