@@ -1,8 +1,27 @@
 import React from 'react';
 import { FaGithub, FaWhatsappSquare } from 'react-icons/fa';
 import { IoLocationSharp, IoMailUnreadSharp } from 'react-icons/io5';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); // page reload বন্ধ করবে
+
+        // এখানে Netlify বা অন্য backend call করতে পারি
+
+        // Success Alert দেখানো
+        Swal.fire({
+            title: 'Message Sent!',
+            text: 'Your message has been successfully sent.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+
+        // Form reset (optional)
+        e.target.reset();
+    };
+
     return (
         <section className="w-11/12 mx-auto py-12">
 
@@ -53,13 +72,24 @@ const Contact = () => {
                 </div>
 
                 {/* RIGHT SIDE: FORM */}
-                <div className="md:w-1/2 w-full flex justify-center">
-                    <form className="bg-gray-900 border border-gray-700 rounded-2xl p-6 shadow-xl w-full max-w-md">
+                <div className="md:w-1/2 w-full flex justify-center mx-auto my-10">
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        onSubmit={handleSubmit}
+                        className="bg-gray-900 border border-gray-700 rounded-2xl p-6 shadow-xl w-full max-w-md"
+                    >
+
+                        {/* Hidden input for Netlify */}
+                        <input type="hidden" name="form-name" value="contact" />
 
                         {/* FORM HEADING */}
-                        <legend className="text-2xl mb-5 font-bold
-                            bg-gradient-to-r from-yellow-300 via-green-400 to-cyan-400
-                            bg-clip-text text-transparent">
+                        <legend
+                            className="text-2xl mb-5 font-bold
+            bg-gradient-to-r from-yellow-300 via-green-400 to-cyan-400
+            bg-clip-text text-transparent"
+                        >
                             Send Message
                         </legend>
 
@@ -67,34 +97,40 @@ const Contact = () => {
                         <label className="label text-gray-300 mb-1">Name</label>
                         <input
                             type="text"
+                            name="name"
                             className="input text-black w-full p-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             placeholder="Enter your name"
+                            required
                         />
 
                         {/* EMAIL */}
                         <label className="label text-gray-300 mb-1">Email</label>
                         <input
                             type="email"
+                            name="email"
                             className="input text-black w-full p-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             placeholder="Enter your email"
+                            required
                         />
 
                         {/* MESSAGE */}
                         <label className="label text-gray-300 mb-1">Message</label>
                         <textarea
+                            name="message"
                             rows="5"
                             className="textarea text-black w-full p-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             placeholder="Write your message here..."
+                            required
                         ></textarea>
 
                         {/* BUTTON */}
                         <button
+                            type="submit" // Submit type
                             className="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-300 via-green-400 to-cyan-400
-                            text-black font-bold hover:scale-105 transition-transform shadow-md"
+                   text-black font-bold hover:scale-105 transition-transform shadow-md"
                         >
                             Send Message
                         </button>
-
                     </form>
                 </div>
 
