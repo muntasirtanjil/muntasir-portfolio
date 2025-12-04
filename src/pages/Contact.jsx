@@ -6,7 +6,6 @@ import Swal from 'sweetalert2';
 const Contact = () => {
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // page reload বন্ধ করবে
 
         // এখানে Netlify বা অন্য backend call করতে পারি
 
