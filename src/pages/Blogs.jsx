@@ -3,14 +3,13 @@ import { Link, Navigate } from 'react-router';
 import Navber from '../component/Navber';
 
 const Blogs = () => {
-    
-    return (
-        <div className='bg-black'>
-            
-        <Link className='text-white' to='/'>Back to Home</Link>
 
+    return (
+        <div className='bg-black py-80'>
+            <Navber></Navber>
+            <h1 className='text-white text-center text-3xl md:text-4xl'>No Blogs Available Now! </h1>
         </div>
     );
 };
 
-export default Blogs;
+export default Blogs; 
