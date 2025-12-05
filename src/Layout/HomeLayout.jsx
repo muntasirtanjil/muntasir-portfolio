@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
 
+
+
 import Navber from '../component/Navber';
 import Header from '../component/Header';
 import About from '../pages/About';
@@ -11,6 +13,8 @@ import Contact from '../pages/Contact';
 import Footer from '../component/Footer';
 
 const HomeLayout = () => {
+
+  
   const location = useLocation();
 
   // Auto scroll when navbar sends { state: { scrollTo: "section" } }
@@ -35,7 +39,7 @@ const HomeLayout = () => {
         <About />
       </section>
 
-      <section id="skill" className='w-10/12 mx-auto py-16'>
+      <section id="skill" className='w-10/12 fade-up mx-auto py-16'>
         <Skill />
       </section>
 
