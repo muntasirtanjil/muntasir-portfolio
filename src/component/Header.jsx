@@ -61,7 +61,8 @@ const Header = () => {
                 <img
                     src={myPic}
                     alt="Muntasir"
-                    className='w-60 h-full md:w-70 md:h-object-cover hover:scale-105 transition-transform duration-300'
+                    className='w-60 h-full md:w-70 md:h-object-cover hover:scale-105 active:scale-105 focus:scale-105
+ transition-transform duration-300'
                 />
             </div>
         </section>

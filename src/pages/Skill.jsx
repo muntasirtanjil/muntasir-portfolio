@@ -54,7 +54,8 @@ const Skill = () => {
                             className="flex flex-col items-center  justify-center w-32 h-32 
                     border-1 border-gray-600 rounded-2xl 
                     p-4 transition-transform duration-300 
-                    hover:scale-105 hover:border-[#2dff7c] cursor-pointer 
+                    hover:scale-105  active:scale-105 focus:scale-105
+ hover:border-[#2dff7c] cursor-pointer 
                     bg-[#121212] shadow-md hover:shadow-lg">
 
                             <img className="w-12 h-12 mb-2" src={skill.img} alt={skill.name} />
@@ -86,7 +87,8 @@ const Skill = () => {
                             className="flex flex-col items-center justify-center w-32 h-32 
                     border-1 border-gray-600 rounded-2xl 
                     p-4 transition-transform duration-300 
-                    hover:scale-105 hover:border-indigo-500 cursor-pointer 
+                    hover:scale-105 active:scale-105 focus:scale-105
+ hover:border-indigo-500 cursor-pointer 
                     bg-[#121212] shadow-md hover:shadow-lg">
 
                             <img className="w-12 h-12 mb-2" src={skill.img} alt={skill.name} />
@@ -118,7 +120,8 @@ const Skill = () => {
                             className="flex flex-col items-center    justify-center w-32 h-32 
                     border-1 border-gray-600 rounded-2xl 
                     p-4 transition-transform duration-300 
-                    hover:scale-105 hover:border-[#2dff7c] cursor-pointer 
+                    hover:scale-105 active:scale-105 focus:scale-105
+ hover:border-[#2dff7c] cursor-pointer 
                     bg-[#121212] shadow-md hover:shadow-lg">
 
                             <img className="w-12 h-12 mb-2" src={skill.img} alt={skill.name} />

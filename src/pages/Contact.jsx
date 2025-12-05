@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="w-11/12 mx-auto py-12">
+        <section className="w-11/12 mx-5 md:mx-auto py-12">
 
             {/* MAIN TITLE */}
             <h2 className="text-3xl md:text-4xl text-center font-bold mb-10
