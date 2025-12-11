@@ -13,7 +13,7 @@ const Header = () => {
     }, []);
 
     return (
-        <section id='home' className='w-11/12 mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-5 justify-between md:pt-12 text-white'>
+        <section id='home' className='px-2.5 md:w-11/12  md:mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-5 justify-between md:pt-12 text-white'>
 
             {/* TEXT SECTION */}
             <div className={`md:w-1/2 w-full space-y-5 text-center md:text-left order-2 md:order-1

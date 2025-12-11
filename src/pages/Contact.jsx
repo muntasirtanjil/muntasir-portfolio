@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="w-11/12 mx-5 md:mx-auto py-12">
+        <section className=" px-2.5 md:w-11/12  md:mx-auto py-12">
 
             {/* MAIN TITLE */}
             <h2 className="text-3xl md:text-4xl text-center font-bold mb-10
@@ -140,3 +140,9 @@ const Contact = () => {
 };
 
 export default Contact;
+<form name="contact" netlify hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+</form>
+

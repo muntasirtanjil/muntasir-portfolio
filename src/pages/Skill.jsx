@@ -5,6 +5,7 @@ import js from '../assets/javaScript-removebg-preview.png'
 import tailwind from '../assets/tailwind-removebg-preview.png'
 import react from '../assets/react_logo-removebg-preview.png'
 import nextJS from '../assets/nextJS-removebg-preview.png'
+import html from '../assets/ChatGPT Image Dec 11, 2025, 12_08_17 PM.png'
 
 
 import nodeJs from '../assets/node_js-removebg-preview.png'
@@ -43,12 +44,12 @@ const Skill = () => {
 
                     {/* Skill Card */}
                     {[
-                        { img: css, name: "HTML" },
+                        { img: html, name: "HTML" },
                         { img: css, name: "CSS" },
                         { img: tailwind, name: "Tailwind CSS" },
                         { img: js, name: "JavaScript" },
-                        { img: react, name: "React JS" },
-                        { img: nextJS, name: "Next JS" },
+                        { img: react, name: "React.JS" },
+                        { img: nextJS, name: "Next.JS" },
                     ].map((skill, index) => (
                         <div key={index}
                             className="flex flex-col items-center  justify-center w-32 h-32 
@@ -78,9 +79,9 @@ const Skill = () => {
 
                     {/* Skill Card */}
                     {[
-                        { img: nodeJs, name: "nodejs" },
-                        { img: expressJS, name: "express" },
-                        { img: mongoDB, name: "mongodb" },
+                        { img: nodeJs, name: "Node js" },
+                        { img: expressJS, name: "express JS" },
+                        { img: mongoDB, name: "MongoDB" },
 
                     ].map((skill, index) => (
                         <div key={index}
@@ -113,7 +114,7 @@ const Skill = () => {
 
                     {[
 
-                        { img: firebase, name: "firebase" },
+                        { img: firebase, name: "Firebase" },
                         { img: nextAuth, name: "NextAuth" },
                     ].map((skill, index) => (
                         <div key={index}
@@ -151,8 +152,8 @@ const Skill = () => {
 
                     {[
 
-                        { img: git, name: "git" },
-                        { img: figma, name: "figma" },
+                        { img: git, name: "Git" },
+                        { img: figma, name: "Figma" },
                     ].map((skill, index) => (
                         <div key={index}
                             className="flex flex-col items-center    justify-center w-32 h-32 
